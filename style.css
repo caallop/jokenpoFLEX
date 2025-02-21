@@ -2,20 +2,32 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(75, 29, 161);
 }
 
 .container{
-    width: 800px;
-    background-color: rgb(75, 29, 161);
+    width: 800px;  
     margin: 0px auto;
     padding: 0px 100px;
     color: #FFF;
+    position: sticky;
 }
 
 img{
-    padding: 0px 30px;
+    padding: 10px 30px;
 }
 
 h2{
-    padding: 30px 30px;
+    padding: 50px 50px;
+}
+
+input{
+    margin: 30px 50px;
+}
+
+.bttns{
+    width: 200px;
+    background: #FFF;
+    border-radius: 20px;
+    height: 25px;
 }

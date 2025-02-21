@@ -3,6 +3,20 @@
  * @author Vitor de Assis
  */
 
+//=========================================================
+// Registro do Service Worker
+// Se o navegador de internet suportar este recurso
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(() => {
+            console.log("Service Worker registrado!")
+        })
+}
+
+//=========================================================
+
+
 // ALT + Z ativa quebra de linha automática
 
 // Como saber se esta marcado o RADIOBUTTON ou CHECKBOX?

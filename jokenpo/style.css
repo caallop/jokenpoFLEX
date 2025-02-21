@@ -5,6 +5,12 @@
 
 .container{
     width: 800px;
-    height: 1200px;
     background-color: rgb(75, 29, 161);
+    margin: 0px auto;
+    padding: 0px 100px;
+    color: #FFF;
+}
+
+img{
+    padding: 0px 30px;
 }

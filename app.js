@@ -1,6 +1,6 @@
 /**
  * JoKenPo
- * @author Vitor de Assis
+ * @author Guilherme Rosa, Vitor de Assis, Wellington R Cruz.
  */
 
 //=========================================================

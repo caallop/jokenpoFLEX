@@ -1,7 +1,8 @@
 /**
- * Service worker
- * @author Vitor de Assis
+ * Service Worker JoKenPo
+ * @author Guilherme Rosa, Vitor de Assis, Wellington R Cruz.
  */
+
 
 // Instalação (cache "armazenamento local")
 self.addEventListener('install', (event) => {
@@ -28,6 +29,7 @@ self.addEventListener('activate', (event) => {
     console.log("Ativando o service worker...", event)
     return self.clients.claim()
 })
+
 
 // Interceptação (solicitações https e servindo em cache quanto off-line)
 

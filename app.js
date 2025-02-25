@@ -8,7 +8,7 @@
 // Se o navegador de internet suportar este recurso
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('./jokenpoFLEX/sw.js')
+        .register('/sw.js')
         .then(() => {
             console.log("Service Worker registrado!")
         })

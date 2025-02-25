@@ -7,12 +7,15 @@
 // Registro do Service Worker
 // Se o navegador de internet suportar este recurso
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('/sw.js')
-        .then(() => {
-            console.log("Service Worker registrado!")
-        })
-}
+    navigator.serviceWorker.register('/sw.js')  // Caminho absoluto correto
+      .then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+  }
+  
 
 //=========================================================
 

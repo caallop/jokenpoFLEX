@@ -34,15 +34,23 @@ self.addEventListener('activate', (event) => {
 
 // Interceptação (solicitações https e servindo em cache quanto off-line)
 
-self.addEventListener('fetch', (event) => {
+//self.addEventListener('fetch', (event) => {
+//    event.respondWith(
+//        caches.match(event.request)
+//            .then((response) => {
+//               if (response) {
+//                    return response
+//                } else {
+//                    return fetch(event.request)
+//                }
+//            })
+//    )
+//})
+self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
-            .then((response) => {
-                if (response) {
-                    return response
-                } else {
-                    return fetch(event.request)
-                }
+            .then(response => {
+                return response || fetch(event.request)
             })
     )
 })

@@ -14,6 +14,8 @@ if ('serviceWorker' in navigator) {
         })
 }
 
+//=========================================================
+
 
 // Instalação (cache "armazenamento local")
 self.addEventListener('install', (event) => {

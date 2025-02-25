@@ -1,7 +1,7 @@
 {
     "name" : "JoKenPo",
     "short_name" : "JoKenPo",
-    "description" : "Jogue JoKenPo agora!",
+    "description" : "Aplicativo para jogar JoKenPo com possibilidade de jogar sem rede",
     "start_url" : "/",
     "scope" : "/",
     "display" : "standalone",

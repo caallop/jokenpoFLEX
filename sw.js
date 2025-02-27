@@ -22,18 +22,18 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open('static')
             .then((cache) => {
-                cache.add('./jokenpoFLEX/')
-                cache.add('./jokenpoFLEX/index.html')
-                cache.add('./jokenpoFLEX/style.css')
-                cache.add('./jokenpoFLEX/app.js')
-                cache.add('./jokenpoFLEX/img/papel.png')
-                cache.add('./jokenpoFLEX/img/pc.png')
-                cache.add('./jokenpoFLEX/img/pcpapel.png')
-                cache.add('./jokenpoFLEX/img/pcpedra.png')
-                cache.add('./jokenpoFLEX/img/pctesoura.png')
-                cache.add('./jokenpoFLEX/img/pedra.png')
-                cache.add('./jokenpoFLEX/img/tesoura.png')
-                cache.add('./jokenpoFLEX/img/bgyll.jpg')
+                cache.add('./jokenpoflex/')
+                cache.add('./jokenpoflex/index.html')
+                cache.add('./jokenpoflex/style.css')
+                cache.add('./jokenpoflex/app.js')
+                cache.add('./jokenpoflex/img/papel.png')
+                cache.add('./jokenpoflex/img/pc.png')
+                cache.add('./jokenpoflex/img/pcpapel.png')
+                cache.add('./jokenpoflex/img/pcpedra.png')
+                cache.add('./jokenpoflex/img/pctesoura.png')
+                cache.add('./jokenpoflex/img/pedra.png')
+                cache.add('./jokenpoflex/img/tesoura.png')
+                cache.add('./jokenpoflex/img/bgyll.jpg')
             })
     )
 })
@@ -47,18 +47,19 @@ self.addEventListener('activate', (event) => {
 
 // Interceptação (solicitações https e servindo em cache quanto off-line)
 
-//self.addEventListener('fetch', (event) => {
-//    event.respondWith(
-//        caches.match(event.request)
-//            .then((response) => {
-//               if (response) {
-//                    return response
-//                } else {
-//                    return fetch(event.request)
-//                }
-//            })
-//    )
-//})
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request)
+            .then((response) => {
+                if (response) {
+                    return response
+                } else {
+                    return fetch(event.request)
+                }
+            })
+    )
+})
+
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)

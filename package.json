@@ -1,0 +1,19 @@
+{
+  "name": "jokenpoflex",
+  "version": "1.0.0",
+  "description": "aplicativo que simula jokenpo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caallop/jokenpoFLEX.git"
+  },
+  "author": "Guilherme Vitor Well",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caallop/jokenpoFLEX/issues"
+  },
+  "homepage": "https://github.com/caallop/jokenpoFLEX#readme"
+}
